@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hkAnimationInterop", "hkAnimationInterop\hkAnimationInterop.vcxproj", "{8A1A3E01-3A99-41F5-BBC1-34E0C18E80D9}"
 EndProject
@@ -14,6 +14,7 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8A1A3E01-3A99-41F5-BBC1-34E0C18E80D9}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{8A1A3E01-3A99-41F5-BBC1-34E0C18E80D9}.Debug|Any CPU.Build.0 = Debug|Win32
 		{8A1A3E01-3A99-41F5-BBC1-34E0C18E80D9}.Debug|x86.ActiveCfg = Debug|Win32
 		{8A1A3E01-3A99-41F5-BBC1-34E0C18E80D9}.Debug|x86.Build.0 = Debug|Win32
 		{8A1A3E01-3A99-41F5-BBC1-34E0C18E80D9}.Release|Any CPU.ActiveCfg = Release|Win32
@@ -22,5 +23,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {162C2292-7CCF-4509-BC3C-2456FE211A4C}
 	EndGlobalSection
 EndGlobal

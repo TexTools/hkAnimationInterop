@@ -42,7 +42,7 @@ Transform* Animation::getPose(const float time, int &count)
     hkaPose pose(this->m_AnimatedSkeleton->getSkeleton());
     this->m_AnimatedSkeleton->sampleAndCombineAnimations(pose.accessUnsyncedPoseLocalSpace().begin(), pose.getFloatSlotValues().begin());
 
-    const hkQsTransform *transforms = pose.getSyncedPoseModelSpace().begin();
+    const hkQsTransform *transforms = pose.getSyncedPoseLocalSpace().begin();
     
     count = this->m_AnimatedSkeleton->getSkeleton()->m_bones.getSize();
     Transform *result = new Transform[count];

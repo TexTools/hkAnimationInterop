@@ -15,6 +15,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>hkAnimationInterop</RootNamespace>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -60,11 +61,13 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;HKANIMATIONINTEROP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>E:\Dev\Havok files 2014\Havok_2014-1-0_PC_XS_win32_VS2012_win7_keycode_perpetual_20140907\hk2014_1_0_r1\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>hkcdCollide.lib;hkcdInternal.lib;hkaInternal.lib;hkaAnimation.lib;hkInternal.lib;hkSerialize.lib;hkCompat.lib;hkBase.lib;hkaPhysics2012Bridge.lib;hkGeometryUtilities.lib;hkImageUtilities.lib;hkVisualize.lib;hkSceneData.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\Dev\Havok files 2014\Havok_2014-1-0_PC_XS_win32_VS2012_win7_keycode_perpetual_20140907\hk2014_1_0_r1\Lib\win32_vs2012_win7\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
